@@ -1,0 +1,22 @@
+project_id = "family-budget"
+[api]
+enabled = true
+port = 54321
+[db]
+port = 54322
+major_version = 17
+[auth]
+enabled = true
+minimum_password_length = 8
+site_url = "familybudget://verify"
+additional_redirect_urls = ["familybudget://verify", "familybudget://reset"]
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+[inbucket]
+enabled = true
+port = 54324
+
+[auth.email.template.confirmation]
+subject = "Verify your Family Budget email"
+content_path = "./supabase/templates/confirmation.html"

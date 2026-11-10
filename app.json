@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Family Budget",
+    "slug": "family-budget",
+    "scheme": "familybudget",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "app.familybudget.mobile"
+    },
+    "android": {
+      "package": "app.familybudget.mobile"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
